@@ -5,12 +5,12 @@
  */
 package com.vn.introjava.tests;
 
-import com.vn.introjava.OrdenamientoBurbuja;
+import com.vn.introjava.funcionesbasicas.OrdenamientoBurbuja;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import com.vn.introjava.OrdenamientoBurbuja;
+import com.vn.introjava.funcionesbasicas.OrdenamientoBurbuja;
 
 /**
  *
