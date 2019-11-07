@@ -12,7 +12,7 @@ package com.vn.introjava.poo;
  *
  * @author pc
  */
-public abstract class Vehiculo {
+public abstract class Vehiculo extends Object{
     
     TipoVehiculo tipo;
 
@@ -33,6 +33,12 @@ public abstract class Vehiculo {
     public abstract void avanzar(); //Declaracion
         
     public abstract void MostrarEstado();
+
+    @Override
+    public String toString() {
+        return "Vehiculo{" + "tipo=" + tipo + '}';
+    }
+   
     
     
     

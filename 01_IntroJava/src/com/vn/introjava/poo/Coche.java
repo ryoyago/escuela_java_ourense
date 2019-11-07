@@ -112,7 +112,16 @@ public class Coche /*extends Object*/  extends Vehiculo{
 
     @Override
     public void MostrarEstado() {
-        System.out.println("Soy un coche");
+        System.out.println(toString());
+        
     }
+
+    @Override
+    public String toString() {
+        String t=""+tipo;
+           
+           return t;
+    }
+    
 
 }

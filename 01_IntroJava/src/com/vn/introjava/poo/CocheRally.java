@@ -17,30 +17,26 @@ public class CocheRally extends Coche {
 
     public CocheRally() {
         super();
-        rozamiento=5f;
-        
-    }
-    
-    /** Constructor con paramentros
-     * Al implementar un constructor, el de por defecto
-     * deja de ser implementado por java
-     * 
-     * @param marca 
-     */
+        rozamiento = 5f;
 
+    }
+
+    /**
+     * Constructor con paramentros Al implementar un constructor, el de por
+     * defecto deja de ser implementado por java
+     *
+     * @param marca
+     */
     public CocheRally(String marca) {
         super(marca);
-        rozamiento=5f;
-        tipo=TipoVehiculo.RALLY;
+        rozamiento = 5f;
+        tipo = TipoVehiculo.RALLY;
     }
 
     public CocheRally(float rozamiento, String marca) {
         super(marca);
         this.rozamiento = rozamiento;
     }
-    
-    
-    
 
     /**
      * Obtener valor de rozamiento
@@ -76,24 +72,30 @@ public class CocheRally extends Coche {
 
     }
 
-
 //return super.arrancar(orden); //To change body of generated methods, choose Tools | Templates.
 //Ejercicio: sobreescribir el metodo mostrarEstado para que
 //tambien muestre el rozamiento y que indique que es "coche de rally"
 //@Override
-public void mostrarEstadoAntiguo() {
+    public void mostrarEstadoAntiguo() {
         super.mostrarEstado();
         System.out.println(" -Rozamiento " + getRozamiento());
 
     }
 
     @Override
-        public void mostrarEstado() {
+    public void MostrarEstado() {
 
-        System.out.println(" Soy un Coche de rally " + getMarca()
-                + ", rozam= " + rozamiento
-                + (isArrancado() ? " arrancado." : " apagado."));
-
+        // System.out.println(tipo + getMarca()
+        //       + ", rozam= " + rozamiento
+        //     + (isArrancado() ? " arrancado." : " apagado."));
+        System.out.println(toString());
     }
-        
+
+    @Override
+    public String toString() {
+        String t = "" + tipo;
+
+        return t;
+    }
+
 }

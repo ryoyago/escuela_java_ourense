@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.vn.introjava.tests;
+package com.vn.introjava.tests.funcionesbasicas;
 
 import com.vn.introjava.funcionesbasicas.OrdenamientoBurbuja;
 import org.junit.Before;

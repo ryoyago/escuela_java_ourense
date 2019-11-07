@@ -9,7 +9,7 @@ package com.vn.introjava.poo;
  *
  * @author pc
  */
-public class Tractor extends Vehiculo{
+public class Tractor extends Vehiculo {
 
     @Override
     public void avanzar() {
@@ -17,17 +17,18 @@ public class Tractor extends Vehiculo{
     }
 
     public Tractor() {
-        tipo= TipoVehiculo.TRACTOR;
+        tipo = TipoVehiculo.TRACTOR;
+    }
+    @Override
+    public void MostrarEstado() {
+        System.out.println(toString());
+
     }
 
     @Override
-    public void MostrarEstado() {
-        System.out.println("SOy un tractor");
+    public String toString() {
+        String t = "" + tipo;
+        return t;
     }
-    
 
-    
-
-    
-    
 }

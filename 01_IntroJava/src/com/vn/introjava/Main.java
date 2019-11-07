@@ -5,7 +5,10 @@
  */
 package com.vn.introjava;
 
+import com.sun.istack.internal.logging.Logger;
 import com.vn.introjava.funcionesbasicas.DatosBasicos;
+import com.vn.introjava.poo.Coche;
+import com.vn.introjava.poo.FabricaCoche;
 import static java.util.Arrays.sort;
 
 /**
@@ -29,7 +32,17 @@ public class Main {
         //OrdenamientoBurbuja.ordenarArray();
    //        OrdenamientoBurbuja.OrdenarArray2();
    
-   DatosBasicos.arrayAleatroio();
+   //DatosBasicos.arrayAleatroio();
+   try{
+   Coche c= FabricaCoche.crear("Seat en main");
+   c.mostrarEstado();
+   c=FabricaCoche.crear(null);
+   c.mostrarEstado();
+   }
+   catch(Exception ex){
+         //Logger.getLogger()
+   }
+   
    
 
     }
