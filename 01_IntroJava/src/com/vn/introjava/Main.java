@@ -7,8 +7,8 @@ package com.vn.introjava;
 
 import com.sun.istack.internal.logging.Logger;
 import com.vn.introjava.funcionesbasicas.DatosBasicos;
-import com.vn.introjava.poo.Coche;
-import com.vn.introjava.poo.FabricaCoche;
+import com.vn.introjava.poo.vehiculos.Coche;
+import com.vn.introjava.poo.vehiculos.FabricaCoche;
 import static java.util.Arrays.sort;
 
 /**

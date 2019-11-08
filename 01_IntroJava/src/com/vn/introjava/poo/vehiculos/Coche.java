@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.vn.introjava.poo;
+package com.vn.introjava.poo.vehiculos;
 
 /**
  *
  * @author pc
  */
-public class Coche /*extends Object*/  extends Vehiculo{
+public class Coche /*extends Object*/  extends Vehiculo {
 
     /*public Coche(){ //Constructor por defecto____________________________________
         
@@ -121,6 +121,12 @@ public class Coche /*extends Object*/  extends Vehiculo{
         String t=""+tipo;
            
            return t;
+    }
+
+    @Override
+    public void mover(float metros) {
+        avanzar();
+        System.out.println(metros+ " metros");
     }
     
 
