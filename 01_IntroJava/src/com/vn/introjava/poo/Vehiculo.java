@@ -34,10 +34,7 @@ public abstract class Vehiculo extends Object{
         
     public abstract void MostrarEstado();
 
-    @Override
-    public String toString() {
-        return "Vehiculo{" + "tipo=" + tipo + '}';
-    }
+   
    
     
     
