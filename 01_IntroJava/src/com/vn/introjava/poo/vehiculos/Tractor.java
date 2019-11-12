@@ -31,4 +31,9 @@ public class Tractor extends Vehiculo {
         return t;
     }
 
+    @Override
+    public void mover(float metros) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
