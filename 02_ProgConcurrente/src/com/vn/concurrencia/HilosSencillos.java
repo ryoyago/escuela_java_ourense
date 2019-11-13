@@ -27,7 +27,7 @@ public class HilosSencillos {
 
         @Override
         public void run() {
-            for (long i = 0; i < 5000; i++) {
+            for (long i = 0; i < 500; i++) {
                 contcompartido++;
                 if (i % 2 == 0) {
                     System.out.println("Instruccion A " + i + " - contador = " + contcompartido);
@@ -43,7 +43,7 @@ public class HilosSencillos {
         @Override
         public void run() {
             //El contador principal, j , en varibale local
-            for (int j = 0; j < 8000; j++) {
+            for (int j = 0; j < 800; j++) {
                 contcompartido++;
                 if (j % 100 == 0) {
                     System.out.println("Instruccion B" + j + " - contador = " + contcompartido);
