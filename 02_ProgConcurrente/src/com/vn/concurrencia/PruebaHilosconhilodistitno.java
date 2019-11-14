@@ -5,7 +5,6 @@
  */
 package com.vn.concurrencia;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -13,13 +12,15 @@ import java.util.Set;
  *
  * @author pc
  */
-public class PruebaHilos {
+public class PruebaHilosconhilodistitno {
+   
+
 
     static int contcompartido = 0;
-     //Meter dos hilos distintos__________________________
-//Queda pendiente hacer un aleatorio para uqe si es mayor que 0.5 meta un hilo o otro
-  //Tambien se puede hacer por compareto 
-    public PruebaHilos() {
+     
+
+   
+    public PruebaHilosconhilodistitno() {
        
 
     }
@@ -59,7 +60,18 @@ public class PruebaHilos {
         System.out.println("***** THREAD - START *****");
         Set<Thread> setHilos= new HashSet();
         
+        
+        
         for (int i = 0; i < num; i++) {
+            
+            if (Math.random() < 0.5) {
+            
+//    setHilos= new Thread();  Queda pendiente hacer un aleatorio para uqe si es mayor que 0.5 meta un hilo o otro
+            }else {
+                
+            }
+            
+            
             HiloI h=new HiloI();
             Thread th= new Thread(h);
             th.start();
