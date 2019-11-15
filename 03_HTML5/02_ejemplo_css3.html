@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* selecetor universal { propiedad_1=.....; propiedad_2=....}*/
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+    <link rel="stylesheet" href="Estilos/02_ejemplo_css3.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="imagenes/baloncito.jpg" style="width:100px; height: 100px;" alt="Texto alternativo" />
+
+            <div class="titulo">
+                <h1>Título de la web</h1>
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+                    crossorigin="anonymous">
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                    crossorigin="anonymous"></script>
+            </div>
+            <nav>
+                <ul>
+                    <!-- Lista no ordenada-->
+
+                    <li class="nav-item" name="no-tiene-sentido"> <a href="01_estructura_html5.html">Menu
+                            principal</a></li>
+                    <li class="elementi-menu"> <a href="02_ejemplo_css3.html">Ejemplos CSS3</a></li>
+                    <li class="elementi-menu"> <a href="03_formularios.html">Formularios</a></li>
+                    <li class="elementi-menu"> <a href="04_ejemplos_js.html">Webs dinamicas con JS</a></li>
+
+
+                </ul>
+            </nav>
+        </header>
+        <nav>Otro menú</nav>
+        <section class="row">
+            <section class="elemento-menu">
+                <!-- Los encabezados no se deben usar para el estilo, si no por el contenido-->
+                <h2 class="col-12">
+                    Encabezado nivel 2, como titulo secundario
+                </h2>
+                <h3 class="col-12">
+                    Encabezado nivel 3, otros titulos
+                </h3>
+
+                <article class="col-lg-4">
+                    <h3>Maquetados con media-queries</h3>
+                    <h4> Aqui iría un artículo</h4>
+                    Con el texto que bla bla ....
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi fugit suscipit laborum dolores
+                    quisquam? Labore laboriosam dicta aspernatur officia, quasi fugit saepe eum accusantium,
+                    exercitationem magnam repudiandae quos porro autem.
+                </article>
+                <article class="col-lg-4">
+                    <h4> Aqui iría otro artículo Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                        molestias exercitationem, placeat ex asperiores eaque deleniti impedit reprehenderit sit
+                        corporis. Voluptate dicta ullam minima aperiam, non cupiditate officia? Ea, delectus!</h4>
+                    Con el texto que bla bla ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, dolor
+                    est molestiae provident dolorem omnis nisi laboriosam, reiciendis dolores aliquid eos. Nisi id
+                    aspernatur dolor assumenda magni mollitia soluta esse.
+                    <section>Una parte del artículo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+                        ratione tenetur repellendus qui animi? Sapiente sit consequuntur quam nostrum. Voluptas, maxime.
+                        Rem non inventore aspernatur, fugiat tempora maiores. Porro, quia.</section>
+                    <section>Otra parte del artículo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+                        rerum accusantium, molestias error est veritatis. Blanditiis sed delectus sapiente eum
+                        voluptatum possimus, omnis mollitia, nulla animi ipsa, praesentium atque dolores.</section>
+                    <video src="imagenes/Video.mp4" controls="true"></video>
+                </article>
+                <table class="table table-striped table-bordered table-hover table-sm">
+                    <thead class="thead-dark">
+                        <tr>
+                            <!-- TR para cada una de las filas -->
+                            <th>Nombre</th> <!-- TH para las cabeceras de las columnas -->
+                            <th>Apellidos</th>
+                            <th>Edad</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody-light">
+                        <tr>
+                            <td>Ana</td> <!-- TD Para cada una de las celdas de las alumnas-->
+                            <td>Pérez</td>
+                            <td>40</td>
+                            <td><a href="mailto://ana.perez@vn.com">Email</a></td>
+
+                        </tr>
+                        <tr>
+                            <td>Juan</td> <!-- TD Para cada una de las celdas de las alumnas-->
+                            <td>Gómez</td>
+                            <td>41</td>
+                            <td><a href="tel://910001122">Llamar por telefono</a></td>
+
+                        </tr>
+
+                        <tr>
+                            <td>Ana</td> <!-- TD Para cada una de las celdas de las alumnas-->
+                            <td>Pérez</td>
+                            <td>40</td>
+                            <td><a href="mailto://ana.perez@vn.com">Email</a></td>
+
+                        </tr>
+                        <tr>
+                            <td>Juan</td> <!-- TD Para cada una de las celdas de las alumnas-->
+                            <td>Gómez</td>
+                            <td>41</td>
+                            <td><a href="tel://910001122">Llamar por telefono</a></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+                <aside>
+                    <p>Típico submenú con enlaces de interés</p>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/" class="">www.w3schools.com</a></li>
+                        <li><a href="https://developer.mozilla.org/es/">Web Mozilla</a></li>
+                    </ul>
+                </aside>
+                <footer>Pié de página
+                    <nav>
+                        <ul>
+                            <li>Enlaces a RR.SS.</li>
+                        </ul>
+                    </nav>
+                    <address>Avenida Buenos Aires, 40, tu ru rú</address>
+                </footer>
+    </div>
+
+
+    </section>
+</body>
+
+</html>
