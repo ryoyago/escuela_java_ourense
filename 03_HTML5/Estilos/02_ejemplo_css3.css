@@ -1,0 +1,70 @@
+  /* selecetor universal { propiedad_1=.....; propiedad_2=....}*/
+
+
+/* selector de etiqueta */
+header{
+    background-color: rgb(243, 115, 115);
+}
+body{
+    background-color: aquamarine;
+}
+/*Selector vario*/
+h1, h2,h3{
+    background-color: rgb(38, 118, 199); /* RGB */
+}
+/*section descendiente de article*/
+article section{
+    margin: 20px;
+    background-color: rgb(180, 113, 243);
+}
+article > section{
+    margin: 20px;
+    background-color: rgb(180, 113, 243);
+
+}
+
+
+/*clase azul chillon*/
+.azul-chillon{
+    height: 50px;
+    background-color: blue;
+}
+.marco-colocado{
+    display: block;
+    min-width:200px ;
+    
+}
+
+
+/* Selector de id*/
+#enlace-menu, #enlace-css{
+    color:red;
+}
+a:hover{
+    
+    height: 30px;
+}
+.elemento-menu{
+    display: inline;
+}
+.titulo{
+    position:absolute;
+    left: 100px;
+    top: 10px;
+}
+
+.articulo{
+    border: black solid;
+    }
+    @media screen and (max-width: 992px){
+    article section{
+        width: 40%;
+        display: inline-block;
+    }
+    @media screen and (min-width: 991px){
+    article section{
+        width: 80%;
+        display: inline-block;
+    }
+}
+}
