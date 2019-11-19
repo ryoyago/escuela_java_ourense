@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="componente_eventos">
+        <label> Evento con listener</label>
+        <input id="input_listo" size=100 />
+        <input id="btn_listo" type="button">
+        <div id="info_evento"></div>
+    </div>
+
+    <br />
+    <div id="componente_eventos2">
+        <label>Nuevo botoncito</label>
+        <input id="input_listo2" size=100 />
+        <input id="btn_listo2" type="button">
+        <div id="info_evento2"></div>
+    </div>
+    </br>
+    <script>
+        var GestorEv = new GestorEvento("input_listo", "btn_listo", "info_evento");
+        var GestorEv2= new GestorEvento("input_listo2","btn_listo2","info_evento2")
+        let btn_listo = document.getElementById("btn_listo");
+        let btn_listo2 = document.getElementById("btn_listo2");
+        let input_listo = document.getElementById("input_listo");
+        let input_listo2 = document.getElementById("input_listo2");
+        btn_listo.value = "Pulsa, listillo/a";
+        btn_listo.addEventListener("click", funGECallbkAlPulsar);
+        btn_listo.addEventListener("click", funCallbkAlPulsar_Dos);
+        btn_listo2.value = "Pulsa, listillo/a";
+        btn_listo2.addEventListener("click", funCallbkAlPulsar);
+        btn_listo2.addEventListener("click", funCallbkAlPulsar_Dos);
+        function funCallbkAlPulsar(evento) {
+            //input_listo.value="Tispo evento: " + evento.type;
+            if (evento.currentTarget.id == "btn_listo2") {
+                input_listo.value = "Tipo Mandalorian: " + "Uso bluster";
+            } else if (evento.currentTarget.id == "btn_listo") {
+                input_listo2.value = "Tipo evento: " + "Obi Wan Puto amo";
+            }
+            //input_listo2.value="Tipo evento: " +"Obi Wan Puto amo";
+            //input_listo.value="Tipo Mandalorian: " + "Uso bluster";
+            /* let info_evento = document.getElementById("info_evento");
+             evento.currentTarget.value="Puedes repetir";
+             info_evento.innerHTML+="evento.currentTarget.id = " +evento.currentTarget.id  ;
+             info_evento.className="div-marco"*/
+
+        }
+        function funCallbkAlPulsar_Dos(evento) {
+            if (evento.currentTarget.id == "btn_listo2") {
+                document.getElementsByTagName("body")[0].className = "fondo-body";
+            } else if (evento.currentTarget.id == "btn_listo") {
+                document.getElementsByTagName("body")[0].className = "fondo-body2";
+            }
+
+        }
+
+         class GestorEvento {
+ 
+
+            constructor(input, button, div){
+            this.input = input;
+            this.button = button;
+            this.div = div;
+           
+            button.addEventListener("click", this.funCallbkAlPulsar);
+            button.addEventListener("click", this.funCallbkAlPulsar_Dos);
+        }
+           funCallbkAlPulsar = function (evento) {
+                //input_listo.value="Tispo evento: " + evento.type;
+                if (evento.currentTarget.id == "btn_listo2") {
+                    input.value = "Tipo Mandalorian: " + "Uso bluster";
+                } else if (evento.currentTarget.id == "btn_listo") {
+                    input.value = "Tipo evento: " + "Obi Wan Puto amo";
+                }
+                //input_listo2.value="Tipo evento: " +"Obi Wan Puto amo";
+                //input_listo.value="Tipo Mandalorian: " + "Uso bluster";
+                /* let info_evento = document.getElementById("info_evento");
+                 evento.currentTarget.value="Puedes repetir";
+                 info_evento.innerHTML+="evento.currentTarget.id = " +evento.currentTarget.id  ;
+                 info_evento.className="div-marco"*/
+
+            }
+            funCallbkAlPulsar_Dos = function (evento) {
+                if (evento.currentTarget.id == "btn_listo2") {
+                    document.getElementsByTagName("body")[0].className = "fondo-body";
+                } else if (evento.currentTarget.id == "btn_listo") {
+                    document.getElementsByTagName("body")[0].className = "fondo-body2";
+                }
+
+            }
+
+        }
+
+      
+
+    </script>
+    <style>
+        .div-marco {
+            border: blue solid;
+            background-color: lightgray;
+        }
+
+
+
+        .fondo-body {
+            background-color: lightgreen;
+        }
+
+        .fondo-body2 {
+            background-color: lightsalmon;
+        }
+    </style>
+
+</body>
+</body>
+
+</html>
