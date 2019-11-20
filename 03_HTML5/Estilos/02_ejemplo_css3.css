@@ -23,6 +23,17 @@ article > section{
 
 }
 
+.enlace-articulo{
+    padding: 1em;
+    margin: 1em;
+    display: line-block;
+  
+}
+
+h4{
+    cursor: wait;
+}
+
 
 /*clase azul chillon*/
 .azul-chillon{

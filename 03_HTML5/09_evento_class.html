@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="componente_eventos">
+        <label> Evento con listener</label>
+        <input id="input_listo" size=100 />
+        <input id="btn_listo" type="button" value="Pulsame">
+        <div id="info_evento"></div>
+    </div>
+
+    <br />
+    <div id="componente_eventos2">
+        <label>Nuevo botoncito</label>
+        <input id="input_listo2" size=100 />
+        <input id="btn_listo2" type="button" value="Pulsa este otro">
+        <div id="info_evento2"></div>
+    </div>
+    </br>
+    <div onclick="alert('Llamada evento de HTML');">
+        Zona onclick="alert();"
+    </div>
+
+    <div id="quiereUnOnClick">
+        Zona elementDOM.onclick=function(...){...}
+    </div>
+    <script src="JavaScript/09_eventos_class.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+
+            let quiereUnOnClick = document.getElementById("quiereUnOnClick");
+            quiereUnOnClick.onclick = function (evento) {
+                alert("'Llamada evento desde JS, propiedad .onclick'");
+            }
+
+            let gestorEv = new GestorEventosES5("input_listo", "btn_listo", "info_evento");
+            let gestorEv2 = new GestorEventosES5("input_listo2", "btn_listo2", "info_evento2");
+            //let gestorEv = new GestorEventosES6("input_listo", "btn_listo", "info_evento");
+            //let gestorEv2 = new GestorEventosES6("input_listo2", "btn_listo2", "info_evento2");
+
+        });
+
+    </script>
+
+    <style>
+        .btn-tam {
+            width: 350px;
+        }
+
+        .gatillazo {
+            width: 50px;
+        }
+
+
+        .div-marco {
+            border: blue solid;
+            background-color: lightgray;
+        }
+
+
+
+        .fondo-body {
+            background-color: lightgreen;
+        }
+
+        .fondo-body2 {
+            background-color: lightsalmon;
+        }
+    </style>
+</body>
+
+</html>
