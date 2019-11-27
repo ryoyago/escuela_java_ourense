@@ -54,3 +54,5 @@ bin
 demo
 docs
 javadoc
+/07_MVN_ModeloUsuario/target/
+/.metadata/
