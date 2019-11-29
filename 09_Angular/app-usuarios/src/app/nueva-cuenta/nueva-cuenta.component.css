@@ -1,0 +1,7 @@
+.div-marco{
+    border: 2px solid #555555;
+  /*  transform: rotate(100deg);*/
+    transition: 2s;
+    color: red;
+}
+
