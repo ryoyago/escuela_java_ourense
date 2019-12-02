@@ -33,11 +33,8 @@ export class CuentasRestService {
     return this.httpCli.get<CuentaBanc[]>(this.urlApiRest);
   }
 
-  public eliminarCuenta(id: number) {
-
+  public eliminarCuenta(id: number) { 
     return this.httpCli.delete(this.urlApiRest + "/" + id);
   }
-
-
-
+  
 }
