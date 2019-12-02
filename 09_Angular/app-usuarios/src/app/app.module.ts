@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { NuevaCuentaComponent } from './nueva-cuenta/nueva-cuenta.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ListaCuentasComponent } from './lista-cuentas/lista-cuentas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    NuevaCuentaComponent
+    NuevaCuentaComponent,
+    ListaCuentasComponent
   ],
   imports: [
     BrowserModule,

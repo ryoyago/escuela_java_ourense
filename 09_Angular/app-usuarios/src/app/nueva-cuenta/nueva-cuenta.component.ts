@@ -24,12 +24,11 @@ export class NuevaCuentaComponent implements OnInit {
   }
   crearCuenta():void{
     let observador: Observable<CuentaBanc>;
-    observador = this.srvCuentasRest.add(this.cuenta);
-    observador.subscribe((objNoSexual)=>{
+    observador = this.srvCuentasRest.add(this.cuenta,(objNoSexual)=>{
       console.log("Datos: " + objNoSexual["iban"]);
       this.recibido=true;
-    } )
-    console.log(this.cuenta.toString());
+    });
+ 
   }
 
 }
